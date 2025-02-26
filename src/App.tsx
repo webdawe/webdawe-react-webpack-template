@@ -3,7 +3,7 @@ import './styles.css';
 import IMAGE from '../public/logo.png';
 import { ClickCounter } from './ClickCounter';
 export const App: React.FC = () => {
-  const name = "asddd";
+ 
   return (
     <>
       <h1>React Typescript Template {process.env.NODE_ENV}</h1>
