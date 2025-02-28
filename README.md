@@ -19,20 +19,13 @@ This repository provides a basic setup for a React project with Webpack, Babel, 
 
 ## Getting Started
 
-1.  **Clone the repository:**
-
-    ```bash
-    git clone <your-repository-url>
-    cd <your-repository-name>
-    ```
-
-2.  **Install dependencies:**
+1.  **Install dependencies:**
 
     ```bash
     npm install # or yarn install
     ```
 
-3.  **Start the development server:**
+2.  **Start the development server:**
 
     ```bash
     npm run start # or yarn start
@@ -40,7 +33,7 @@ This repository provides a basic setup for a React project with Webpack, Babel, 
 
     This will start a development server at `http://localhost:8080`.
 
-4.  **Build for production:**
+3.  **Build for production:**
 
     ```bash
     npm run build # or yarn build
@@ -48,13 +41,13 @@ This repository provides a basic setup for a React project with Webpack, Babel, 
 
     This will create a production-ready build in the `dist` folder.
 
-5.  **Lint your code:**
+4.  **Lint your code:**
 
     ```bash
     npm run lint # or yarn lint
     ```
 
-6.  **Format your code:**
+5.  **Format your code:**
 
     ```bash
     npm run format # or yarn format
@@ -69,16 +62,14 @@ This repository provides a basic setup for a React project with Webpack, Babel, 
 │   ├── components/    # React components
 │   ├── App.js         # Main application component
 │   └── index.js       # Entry point
-├── .eslintrc.json    # ESLint configuration
-├── .prettierrc.json  # Prettier configuration
+├── eslint.config.js    # ESLint configuration
+├── prettier.config.js  # Prettier configuration
 ├── babel.config.js   # Babel configuration
 ├── package.json      # Project dependencies and scripts
 ├── README.md         # This file
 └── webpack.config.js # Webpack configuration
-
+└── tsconfig.json # Typescript Configuration
 ```
-
-
 ## Configuration
 
 * **Webpack:** The `webpack.config.js` file contains the Webpack configuration. You can modify it to customize the build process.
