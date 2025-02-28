@@ -1,5 +1,7 @@
 const typescriptPlugin = require('@typescript-eslint/eslint-plugin');
 const typescriptParser = require('@typescript-eslint/parser');
+const prettierPlugin = require('eslint-plugin-prettier');
+const prettierConfig = require('./prettier.config.js'); 
 
 module.exports = [
   {
@@ -13,9 +15,11 @@ module.exports = [
     },
     plugins: {
       '@typescript-eslint': typescriptPlugin,
+      prettier: prettierPlugin,
     },
     rules: {
       '@typescript-eslint/no-unused-vars': 'error',
+      'prettier/prettier': ['error', prettierConfig],
     },
   },
 ];
